@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunidade Católica São José — Evangelizar pelo Amor</title>
+  <link rel="icon" type="image/png" href="imagens/logo_comunidade.jpeg" sizes="32x32" />
+  <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontes: Playfair Display (display) + Lato (corpo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ============================================================
+  NAVBAR — fixa no topo, colapsa em mobile
+  Azul escuro da identidade. Logo + nome à esquerda,
+  links à direita com hamburguer em telas pequenas.
+============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-principal">
+  <div class="container">
+
+    <!-- Logo + Nome -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <img src="imagens/logo_comunidade.jpeg" alt="Logo Comunidade São José" width="52" height="52" class="logo-nav" />
+      <div class="navbar-nome">
+        <span class="navbar-titulo">Comunidade Católica São José</span>
+        <span class="navbar-missao">Missão: Evangelizar pelo Amor</span>
+      </div>
+    </a>
+
+    <!-- Botão hamburguer (mobile) -->
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#voluntariado">Voluntários</a></li>
+        <li class="nav-item"><a class="nav-link" href="#somos">Quem Somos</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link btn-doe-nav" href="#doacoes">Doe Agora</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+  HERO — seção inicial com impacto emocional
+  Vídeo de fundo. Chamada para doação.
+============================================================ -->
+<section id="home" class="hero-section">
+  <!-- Vídeo de fundo (o mesmo que você já tem) -->
+  <video class="hero-bg-video" src="videos/video_doacao.mp4" autoplay muted loop playsinline></video>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <span class="hero-badge">Cornélio Procópio — PR</span>
+        <h1 class="hero-titulo">Juntos, transformamos<br>vidas com <em>amor</em></h1>
+        <p class="hero-subtitulo">
+          A Comunidade Católica São José serve refeições, doa roupas e acolhe quem mais precisa.
+          Sua contribuição faz essa missão continuar.
+        </p>
+        <div class="hero-btns">
+          <a href="#doacoes" class="btn btn-doe-hero">Quero Doar</a>
+          <a href="#voluntariado" class="btn btn-voluntario-hero">Ser Voluntário</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  BARRA DE NÚMEROS — prova social imediata
+  Cria confiança mostrando o impacto real em números.
+============================================================ -->
+<section class="barra-numeros">
+  <div class="container">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-3 numero-item">
+        <span class="numero-valor" data-target="1000">0</span>
+        <span class="numero-label">Refeições/mês</span>
+      </div>
+      <div class="col-6 col-md-3 numero-item">
+        <span class="numero-valor" data-target="12">0</span>
+        <span class="numero-label">Anos de missão</span>
+      </div>
+      <div class="col-6 col-md-3 numero-item">
+        <span class="numero-valor" data-target="38">0</span>
+        <span class="numero-label">Voluntários ativos</span>
+      </div>
+      <div class="col-6 col-md-3 numero-item">
+        <span class="numero-valor" data-target="26">0</span>
+        <span class="numero-label">Anos da comunidade</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  IMPACTO — o que fazemos
+============================================================ -->
+<section id="impacto" class="secao-impacto">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <span class="secao-label">Nossa missão</span>
+        <h2 class="secao-titulo">Servindo com<br>amor quem precisa</h2>
+        <p class="secao-texto">
+          Todo dia, nossa equipe de voluntários prepara marmitas e distribui refeições quentes para
+          pessoas em situação de vulnerabilidade social em Cornélio Procópio.
+        </p>
+        <p class="secao-texto">
+          Acreditamos que alimentar o corpo é o primeiro passo para restaurar a dignidade.
+          Com sua ajuda, podemos melhorar cada vez mais.
+        </p>
+        <a href="#doacoes" class="btn btn-primario mt-2">Ajude essa causa</a>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card-impacto card-impacto--azul">
+              <span class="card-impacto-icone">🍽️</span>
+              <h3>Alimentação</h3>
+              <p>Marmitas diárias para moradores em situação de rua e famílias carentes</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-impacto card-impacto--claro">
+              <span class="card-impacto-icone">👕</span>
+              <h3>Roupas</h3>
+              <p>Recebemos e redistribuímos roupas e agasalhos, calçados e roupas em boas condições (preferencialmente de homens)</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-impacto card-impacto--claro">
+              <span class="card-impacto-icone">🧴</span>
+              <h3>Higiene</h3>
+              <p>Kits de higiene pessoal e limpeza para pessoas em situação de rua</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-impacto card-impacto--azul">
+              <span class="card-impacto-icone">🏗️</span>
+              <h3>Construção</h3>
+              <p>Nova sede em construção para ampliar o atendimento à comunidade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  ANÚNCIO DE EVENTO — banner sutil, não invasivo
+============================================================ -->
+<section class="banner-evento" id="eventoDestaque">
+  <div class="container">
+    <div class="banner-evento-inner">
+      <div class="banner-evento-icone">🍕</div>
+      <div class="banner-evento-texto">
+        <strong>Próximo evento:</strong> Venda de Pizzas Beneficente —
+        <span id="dataEvento">Sábado, 13 de junho às 19h</span>
+      </div>
+      <a href="#eventos" class="banner-evento-link">Ver detalhes →</a>
+      <button class="banner-evento-fechar" onclick="document.getElementById('eventoDestaque').style.display='none'" aria-label="Fechar">✕</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  VÍDEOS — seção de vídeos
+============================================================ -->
+<section id="projetos" class="section-historias">
+  <div class="container">
+    <div class="mb-5 text-center">
+      <span class="secao-label">Veja de perto</span>
+      <h2 class="secao-titulo">O projeto em ação</h2>
+      <p class="secao-subtitulo-centro">
+        Conheça o trabalho que é feito todos os dias com dedicação e amor.
+      </p>
+    </div>
+
+    <div class="row g-3 historias-row-scroll" id="gridHistorias">
+
+      <div class="col-6 col-md-4 col-lg-3 col-hist">
+        <div class="historia-card" data-titulo="Alimentação Solidária">
+          <video muted loop playsinline preload="metadata" aria-label="Vídeo: Alimentação Solidária">
+            <source src="videos/video_richo_comidas.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay" aria-hidden="true"></div>
+          <span class="card-badge">Alimentação</span>
+          <button class="btn-mute" aria-label="Ativar/desativar som" title="Som">
+            <svg class="icon-muted" viewBox="0 0 24 24"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2"/></svg>
+            <svg class="icon-sound" viewBox="0 0 24 24" style="display:none"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><path d="M19 8a6 6 0 0 1 0 8" stroke="white" stroke-width="2" fill="none"/></svg>
+          </button>
+          <div class="card-autor"><div class="autor-inicial">SJ</div><span class="autor-nome">São José</span></div>
+          <p class="card-titulo">Marmitas feitas com amor para quem precisa</p>
+          <div class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 col-hist">
+        <div class="historia-card" data-titulo="Nossa Cozinha">
+          <video muted loop playsinline preload="metadata" aria-label="Vídeo: Cozinha">
+            <source src="videos/video_cozinha.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay" aria-hidden="true"></div>
+          <span class="card-badge">Voluntários</span>
+          <button class="btn-mute" aria-label="Ativar/desativar som">
+            <svg class="icon-muted" viewBox="0 0 24 24"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2"/></svg>
+            <svg class="icon-sound" viewBox="0 0 24 24" style="display:none"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><path d="M19 8a6 6 0 0 1 0 8" stroke="white" stroke-width="2" fill="none"/></svg>
+          </button>
+          <div class="card-autor"><div class="autor-inicial">CZ</div><span class="autor-nome">Cozinha</span></div>
+          <p class="card-titulo">Voluntários dedicados na cozinha todos os dias</p>
+          <div class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 col-hist">
+        <div class="historia-card" data-titulo="Bazar Solidário">
+          <video muted loop playsinline preload="metadata" aria-label="Vídeo: Bazar">
+            <source src="videos/video_bazar.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay" aria-hidden="true"></div>
+          <span class="card-badge">Evento</span>
+          <button class="btn-mute" aria-label="Ativar/desativar som">
+            <svg class="icon-muted" viewBox="0 0 24 24"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2"/></svg>
+            <svg class="icon-sound" viewBox="0 0 24 24" style="display:none"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><path d="M19 8a6 6 0 0 1 0 8" stroke="white" stroke-width="2" fill="none"/></svg>
+          </button>
+          <div class="card-autor"><div class="autor-inicial">BZ</div><span class="autor-nome">Bazar</span></div>
+          <p class="card-titulo">Bazar solidário — compre e ajude nossa missão</p>
+          <div class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 col-hist">
+        <div class="historia-card" data-titulo="Nossa Capela">
+          <video muted loop playsinline preload="metadata" aria-label="Vídeo: Capela">
+            <source src="videos/video_capela.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay" aria-hidden="true"></div>
+          <span class="card-badge">Fé</span>
+          <button class="btn-mute" aria-label="Ativar/desativar som">
+            <svg class="icon-muted" viewBox="0 0 24 24"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2"/></svg>
+            <svg class="icon-sound" viewBox="0 0 24 24" style="display:none"><path d="M9 9v6h4l5 5V4l-5 5H9z"/><path d="M19 8a6 6 0 0 1 0 8" stroke="white" stroke-width="2" fill="none"/></svg>
+          </button>
+          <div class="card-autor"><div class="autor-inicial">CP</div><span class="autor-nome">Comunidade</span></div>
+          <p class="card-titulo">Fé em ação — venha fazer parte dessa história</p>
+          <div class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  DOAÇÃO — principal chamada de ação
+  Três formas de contribuir lado a lado.
+============================================================ -->
+<section id="doacoes" class="secao-doacao">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="secao-label secao-label--branca">Faça a diferença</span>
+      <h2 class="secao-titulo secao-titulo--branca">Como você pode ajudar</h2>
+      <p class="secao-subtitulo-centro secao-subtitulo--branca">
+        Toda contribuição, grande ou pequena, alimenta uma família e fortalece nossa missão.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- PIX -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-doacao">
+          <div class="card-doacao-topo">
+            <span class="card-doacao-icone">💸</span>
+            <h3>Doação em Dinheiro</h3>
+            <p>Transferência rápida e segura via Pix. Qualquer valor ajuda.</p>
+          </div>
+          <div class="card-doacao-pix">
+            <span class="pix-label">Chave Pix (CNPJ)</span>
+            <div class="pix-chave-box">
+              <span id="chave-pix">10.502.079/0001-02</span>
+              <button class="btn-copiar" onclick="copiarPix()" title="Copiar chave">📋</button>
+            </div>
+            <span class="pix-copiado" id="msg-copiado">✓ Copiado!</span>
+          </div>
+          <div class="text-center mt-3">
+            <img src="imagens/pix_comunidade.jpeg" alt="QR Code Pix" class="qrcode-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ITENS FÍSICOS -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-doacao">
+          <div class="card-doacao-topo">
+            <span class="card-doacao-icone">📦</span>
+            <h3>Doação de Itens</h3>
+            <p>Traga pessoalmente na sede. Recebemos com muito carinho!</p>
+          </div>
+          <ul class="lista-itens">
+            <li>
+              <img src="imagens/higienelimpeza.jpg" alt="Higiene" class="item-thumb" />
+              <div>
+                <strong>Higiene e Limpeza</strong>
+                <span>Sabonete, shampoo, detergente, desinfetante</span>
+              </div>
+            </li>
+            <li>
+              <img src="imagens/roupaeagasa.jpg" alt="Roupas" class="item-thumb" />
+              <div>
+                <strong>Roupas e Calçados</strong>
+                <span>Agasalhos, sapatos, roupas em bom estado</span>
+              </div>
+            </li>
+            <li>
+              <img src="imagens/Doao-de-alimentos-no-food-service-entenda-a-nova-lei-e-como-doar.png" alt="Alimentos" class="item-thumb" />
+              <div>
+                <strong>Alimentos</strong>
+                <span>Arroz, feijão, óleo, macarrão e não perecíveis</span>
+              </div>
+            </li>
+          </ul>
+          <a href="#localizacao" class="btn btn-primario w-100 mt-3">Ver endereço →</a>
+        </div>
+      </div>
+
+      <!-- OBRA -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-doacao card-doacao--destaque">
+          <div class="card-doacao-topo">
+            <span class="card-doacao-icone">🏗️</span>
+            <h3 style="color: white;">Doe para a Obra</h3>
+            <p style="color: white;">Estamos construindo uma nova sede para ampliar nosso atendimento.</p>
+          </div>
+          <video src="videos/video_construção.mp4" autoplay muted loop playsinline class="video-obra"></video>
+          <p class="obra-texto">
+            Cada tijolo representa uma família que poderemos ajudar. Contribua via Pix
+            usando a mesma chave e coloque no campo de descrição: <strong>"Obra"</strong>.
+          </p>
+          <a href="#doacoes" class="btn btn-branco w-100 mt-2">Contribuir com a obra</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  EVENTOS — carrossel de eventos e promoções
+============================================================ -->
+<section id="eventos" class="secao-eventos">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1rem;">
+ 
+    <span class="secao-label">Agenda</span>
+    <h2 class="secao-titulo">Eventos e Promoções</h2>
+    <p class="secao-sub">Participe e ajude a nossa comunidade a crescer.</p>
+ 
+    <!-- Janela do carrossel -->
+    <div class="carousel-wrapper" id="carrosselEventos">
+ 
+      <!-- A "fita" que desliza -->
+      <div class="carousel-track" id="carrosselFita">
+ 
+        <!-- CARD 1 — Pizza -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--pizza">
+            <span class="evento-icone">🍕</span>
+            <span class="evento-tipo">Promoção</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Venda de Pizzas</h4>
+            <p class="evento-data">📅 Sábado, 13 de junho · R$ 45,00</p>
+            <p>Pizzas saborosas para você e sua família. Toda renda vai para a construção da nova sede.</p>
+          </div>
+        </div>
+ 
+        
+ 
+        <!-- CARD 2 — Terço, Cordão e Adoração -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--devocao">
+            <span class="evento-icone">🕯️</span>
+            <span class="evento-tipo">Devoção</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Terço Mariano e de São José, Devoção do Cordão e Adoração</h4>
+            <p class="evento-data">📅 Toda sexta-feira · 19h · 19:30h · 20h</p>
+            <p>Momento de oração, louvor e partilha em comunidade. Todos são bem-vindos.</p>
+          </div>
+        </div>
+
+        <!-- CARD 3 — Missa construção sede -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--devocao">
+            <span class="evento-icone">✝️</span>
+            <span class="evento-tipo">Devoção</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Missa na construção da sede</h4>
+            <p class="evento-data">📅 1x ao mês</p>
+            <p>Momento de oração, louvor na construção da sede. Todos são bem-vindos. <strong>Endereço:</strong> Rua Paulo Costa Pereira, 500 - Jardim Veneza.</p>
+          </div>
+        </div>
+
+        <!-- CARD 4 — Filhos de José -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--devocao">
+            <span class="evento-icone">🕯️</span>
+            <span class="evento-tipo">Devoção</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Filhos de José</h4>
+            <p class="evento-data">📅 Toda terça-feira · 2x ao mês</p>
+            <p>Momento de adoração ao santíssimo. Apenas para <strong>HOMENS</strong>.</p>
+          </div>
+        </div>
+
+        <!-- CARD 5 — Bazar -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--bazar">
+            <span class="evento-icone">👗</span>
+            <span class="evento-tipo">Bazar</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Bazar da Divina Providência</h4>
+            <p class="evento-data">📅 Sábado, 2x ao mês</p>
+            <p>Roupas, sapatos e acessórios a preços simbólicos. Venha conferir!</p>
+          </div>
+        </div>
+ 
+        <!-- CARD 6 — Ação Social -->
+        <div class="card-evento">
+          <div class="card-evento-header card-evento-header--acao">
+            <span class="evento-icone">🍽️</span>
+            <span class="evento-tipo">Ação Social</span>
+          </div>
+          <div class="card-evento-body">
+            <h4>Distribuição de Marmitas</h4>
+            <p class="evento-data">📅 Todos os dias</p>
+            <p>Distribuição de refeições para pessoas em situação de vulnerabilidade. Venha ajudar!</p>
+          </div>
+        </div>
+ 
+        <!--
+          Adicionar mais cards, copie o bloco abaixo
+          e cole aqui antes do fechamento da .carousel-track:
+ 
+          <div class="card-evento">
+            <div class="card-evento-header card-evento-header--pizza">
+              <span class="evento-icone">🎉</span>
+              <span class="evento-tipo">Tipo do Evento</span>
+            </div>
+            <div class="card-evento-body">
+              <h4>Nome do Evento</h4>
+              <p class="evento-data">📅 Data e hora</p>
+              <p>Descrição do evento.</p>
+            </div>
+          </div>
+ 
+          Cores disponíveis para o header:
+          card-evento-header--pizza      (laranja claro)
+          card-evento-header--bazar      (verde claro)
+          card-evento-header--devocao    (roxo claro)
+          card-evento-header--acao       (rosa claro)
+          card-evento-header--construcao (teal claro)
+        -->
+ 
+      </div><!-- /carousel-track -->
+    </div><!-- /carousel-wrapper -->
+ 
+    <!-- Controles: Anterior · pontinhos · contador · Próximo -->
+    <div class="carousel-controles">
+      <button class="btn-carousel" id="btnAnterior" disabled>‹ Anterior</button>
+ 
+      <!-- Pontinhos gerados automaticamente pelo JS -->
+      <div class="carousel-dots" id="carrosselDots"></div>
+ 
+      <!-- Contador "card 1 de 5" -->
+      <span class="carousel-contador" id="carrosselContador"></span>
+ 
+      <button class="btn-carousel" id="btnProximo">Próximo ›</button>
+    </div>
+ 
+  </div>
+</section>
+
+<!-- ============================================================
+  VOLUNTARIADO
+============================================================ -->
+<section id="voluntariado" class="secao-voluntariado">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <span class="secao-label">Faça parte</span>
+        <h2 class="secao-titulo">Seja um Voluntário</h2>
+        <p class="secao-texto">
+          Nosso projeto de alimentação funciona graças a pessoas que doam seu tempo e coração.
+          Você pode ajudar cozinhando, montando marmitas, distribuindo alimentos ou
+          apoiando a administração do projeto.
+        </p>
+        <p class="secao-texto">
+          Não é preciso experiência — só vontade de servir. Junte-se a mais de
+          <strong>80 voluntários ativos</strong> que já fazem parte da nossa missão.
+        </p>
+
+        <ul class="lista-como-ajudar">
+          <li>🍳 Ajudar na cozinha (preparo de marmitas)</li>
+          <li>📦 Separar e distribuir doações</li>
+          <li>🚗 Buscar e entregar alimentos</li>
+          <li>💻 Apoio administrativo e comunicação</li>
+          <li>🎪 Organização de eventos e bazares</li>
+        </ul>
+
+        <button class="btn btn-primario mt-3" data-bs-toggle="modal" data-bs-target="#modalVoluntario">
+          Quero ser Voluntário
+        </button>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="depoimento-box">
+          <p class="depoimento-texto">
+            "Comecei a fazer a janta dos irmãos há 10 anos e hoje não consigo mais me ver sem ir, pois é muito gratificante."
+          </p>
+          <span class="depoimento-autor">— Marli, voluntária desde 2016</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  LOCALIZAÇÃO
+============================================================ -->
+<section id="localizacao" class="secao-localizacao">
+  <div class="container text-center">
+    <span class="secao-label secao-label--branca">Nos encontre</span>
+    <h2 class="secao-titulo secao-titulo--branca">Localização</h2>
+    <p class="secao-subtitulo-centro secao-subtitulo--branca">
+      Rua Barão do Rio Branco, 900 — Cornélio Procópio, PR
+    </p>
+    <div id="map"></div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  QUEM SOMOS
+============================================================ -->
+<section id="somos" class="secao-somos">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-5 text-center">
+        <img src="imagens/logo_comunidade.jpeg" alt="Logo Comunidade São José" class="somos-logo" />
+      </div>
+
+      <div class="col-lg-7">
+        <span class="secao-label">Nossa história</span>
+        <h2 class="secao-titulo">Quem Somos</h2>
+        <p class="secao-texto">
+          A Comunidade Católica São José é uma organização sem fins lucrativos dedicada a servir
+          pessoas em situação de vulnerabilidade social em Cornélio Procópio.
+        </p>
+        <p class="secao-texto">
+          Nosso trabalho é fundamentado no amor cristão: alimentamos, acolhemos e acompanhamos
+          quem mais precisa, sempre buscando restaurar a dignidade e oferecer esperança.
+        </p>
+        <p class="secao-texto">
+          Através de projetos de alimentação, distribuição de doações, eventos solidários e
+          voluntariado, construímos uma rede de cuidado que transforma vidas todos os dias.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Carrossel de imagens da comunidade -->
+    <div id="carouselSomos" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselSomos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagem 1"></button>
+        <button type="button" data-bs-target="#carouselSomos" data-bs-slide-to="1" aria-label="Imagem 2"></button>
+        <button type="button" data-bs-target="#carouselSomos" data-bs-slide-to="2" aria-label="Imagem 3"></button>
+      </div>
+      <div class="carousel-inner rounded-carousel">
+        <div class="carousel-item active">
+          <img src="./imagens/imagem_igreja.jpeg" class="d-block w-100 carousel-img" alt="Igreja da Comunidade" />
+          <div class="carousel-caption">
+            <h5>Igreja da Comunidade</h5>
+            <p>O lar da nossa comunidade</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/imagem_projeto_alimentacao.jpeg" class="d-block w-100 carousel-img" alt="Projeto Alimentação" />
+          <div class="carousel-caption">
+            <h5>Projeto Alimentação</h5>
+            <p>Alimentando vidas com amor</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/comunidade_sao_jose.jpeg" class="d-block w-100 carousel-img" alt="Comunidade Católica São José" />
+          <div class="carousel-caption">
+            <h5>Comunidade Católica São José</h5>
+            <p>Sede oficial da comunidade</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSomos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSomos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+  FOOTER
+============================================================ -->
+<footer class="rodape">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+
+      <div class="col-md-4 text-center text-md-start">
+        <img src="imagens/logo_comunidade.jpeg" alt="Logo" width="70" height="70" class="logo-nav mb-2" />
+        <p class="rodape-nome">Comunidade Católica São José</p>
+        <p class="rodape-missao">Missão: Evangelizar pelo Amor</p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <h5 class="rodape-titulo">Contato</h5>
+        <p class="rodape-item">📍 R. Barão do Rio Branco, 900<br>Cornélio Procópio — PR</p>
+        <p class="rodape-item">📲 (43) 99654-0523 - Paulo Mensato</p>
+        <p class="rodape-item">📧 cpcomunidadesaojose@gmail.com</p>
+        
+      </div>
+
+      <div class="col-md-4 text-center text-md-end">
+        <h5 class="rodape-titulo">Acesso rápido</h5>
+        <nav class="rodape-links">
+          <a href="#doacoes">Fazer doação</a>
+          <a href="#voluntariado">Ser voluntário</a>
+          <a href="#eventos">Próximos eventos</a>
+          <a href="#localizacao">Como chegar</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="rodape-fundo">
+      <p>© 2025 Comunidade Católica São José — Todos os direitos reservados</p>
+      <p class="rodape-cnpj">CNPJ: 10.502.079/0001-02</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+  MODAL — Formulário de voluntariado
+============================================================ -->
+<div class="modal fade" id="modalVoluntario" tabindex="-1" aria-labelledby="modalVoluntarioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-voluntario">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalVoluntarioLabel">💚 Quero ser Voluntário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-texto">Preencha seus dados e entraremos em contato para orientá-lo sobre como participar.</p>
+        <div class="mb-3">
+          <label for="vol-nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="vol-nome" placeholder="Seu nome" />
+        </div>
+        <div class="mb-3">
+          <label for="vol-tel" class="form-label">WhatsApp</label>
+          <input type="tel" class="form-control" id="vol-tel" placeholder="(43) 9 0000-0000" />
+        </div>
+        <div class="mb-3">
+          <label for="vol-como" class="form-label">Como gostaria de ajudar?</label>
+          <select class="form-select" id="vol-como">
+            <option value="">Escolha uma opção...</option>
+            <option>Ajudar na cozinha</option>
+            <option>Distribuir marmitas</option>
+            <option>Separar doações</option>
+            <option>Organizar eventos</option>
+            <option>Apoio administrativo</option>
+            <option>Outros</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-primario w-100" onclick="enviarWhatsApp()">
+          Enviar via WhatsApp 📲
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS local -->
+<script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<!-- Google Maps -->
+<!-- Configurações do projeto -->
+<script src="config.js"></script>
+
+<!-- Maps carregado dinamicamente após o config estar disponível -->
+<script>
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js' +
+            '?key=' + CONFIG.maps.apiKey +
+            '&callback=initMap';
+    s.async = true;
+    s.defer = true;
+    document.head.appendChild(s);
+  })();
+</script>
+<!-- Script principal -->
+ 
+<script src="script.js"></script>
+</body>
+</html>
